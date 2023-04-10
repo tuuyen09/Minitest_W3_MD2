@@ -39,10 +39,11 @@ public class EmployeeManager {
     public ArrayList<Employee> sortFulltime() {
         ArrayList<Employee> e = new ArrayList<>();
         for (var i : employees) {
-            if (i instanceof FulltimeEmployee ) {
-                e.add(i);
+            if (i instanceof FulltimeEmployee f) {
+                e.add(f);
             }
         }
+        Colections.sort(e);
         return e;
     }
 }
